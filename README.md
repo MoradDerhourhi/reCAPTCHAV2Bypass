@@ -1,253 +1,271 @@
-# reCAPTCHAV2Bypass
+<h1 align="center">AI Image Classification Platform</h1>
 
-Cahier des charges
-Plateforme de classification d’images par Intelligence Artificielle
-1. Contexte du projet
+<p align="center">
+Plateforme intelligente de classification d’images basée sur l’Intelligence Artificielle
+</p>
 
+<p align="center">
+<img src="https://img.shields.io/badge/AI-Computer%20Vision-blue">
+<img src="https://img.shields.io/badge/Status-In%20Development-orange">
+<img src="https://img.shields.io/badge/License-MIT-green">
+<img src="https://img.shields.io/badge/Python-ML%20Pipeline-yellow">
+</p>
+
+<hr>
+
+<h2>📌 Contexte du projet</h2>
+
+<p>
 Le projet consiste à développer une plateforme intelligente capable d’analyser des images et de détecter automatiquement la présence de certains objets ou catégories visuelles.
+</p>
 
-La plateforme devra permettre :
+<p>La plateforme devra permettre :</p>
 
-la collecte d’images
+<ul>
+<li>la collecte d’images</li>
+<li>la gestion et l’organisation des datasets</li>
+<li>l’entraînement de modèles d’intelligence artificielle</li>
+<li>la mise à disposition d’un service automatique de classification</li>
+</ul>
 
-la gestion et l’organisation des datasets
-
-l’entraînement de modèles d’intelligence artificielle
-
-la mise à disposition d’un service automatique de classification d’images
-
+<p>
 L’objectif est de créer une infrastructure complète permettant de développer, améliorer et exploiter des modèles de vision par ordinateur.
+</p>
 
-2. Objectifs du projet
+<hr>
 
-Les objectifs principaux sont :
+<h2>🎯 Objectifs du projet</h2>
 
-Collecter et stocker un grand volume d’images.
+<ul>
+<li>Collecter et stocker un grand volume d’images</li>
+<li>Organiser les images en datasets exploitables</li>
+<li>Associer des catégories aux images (annotation)</li>
+<li>Entraîner des modèles d’intelligence artificielle</li>
+<li>Déployer un service d’analyse automatique d’images</li>
+<li>Mettre en place un système d’amélioration continue</li>
+</ul>
 
-Organiser les images en datasets exploitables.
+<hr>
 
-Associer des catégories aux images (annotation).
+<h2>⚙️ Périmètre fonctionnel</h2>
 
-Entraîner des modèles d’intelligence artificielle.
+<h3>1️⃣ Module de collecte de données</h3>
 
-Déployer un service capable d’analyser automatiquement des images.
+<p>Ce module permet de récupérer des images depuis différentes sources.</p>
 
-Mettre en place un système permettant l’amélioration continue du modèle.
+<b>Fonctions :</b>
 
-3. Périmètre fonctionnel
+<ul>
+<li>Import d’images</li>
+<li>Stockage des images</li>
+<li>Organisation automatique des fichiers</li>
+<li>Gestion des métadonnées</li>
+</ul>
 
-La plateforme devra inclure les modules suivants :
+<h3>2️⃣ Module de gestion des datasets</h3>
 
-1. Module de collecte de données
+<p>Organisation des images pour constituer des datasets exploitables.</p>
 
-Ce module permet de récupérer des images depuis différentes sources.
+<b>Fonctions :</b>
 
-Fonctions principales :
+<ul>
+<li>Structuration des datasets</li>
+<li>Gestion des catégories</li>
+<li>Séparation des jeux de données (train / validation / test)</li>
+<li>Versioning des datasets</li>
+</ul>
 
-import d’images
+<h3>3️⃣ Module d’annotation des images</h3>
 
-stockage des images
+<p>Association de catégories aux images.</p>
 
-organisation automatique des fichiers
+<b>Fonctionnalités :</b>
 
-gestion des métadonnées associées
+<ul>
+<li>Interface simple d’annotation</li>
+<li>Affichage des images</li>
+<li>Sélection de catégories</li>
+<li>Validation / modification des annotations</li>
+<li>Gestion des erreurs d’annotation</li>
+</ul>
 
-2. Module de gestion des datasets
+<h3>4️⃣ Module d’entraînement des modèles</h3>
 
-Ce module permettra d’organiser les images collectées afin de constituer des datasets exploitables.
+<p>Entraînement de modèles d’intelligence artificielle.</p>
 
-Fonctions :
+<b>Fonctions :</b>
 
-structuration des datasets
+<ul>
+<li>Lancement d’entraînement</li>
+<li>Gestion des versions de modèles</li>
+<li>Suivi des performances</li>
+<li>Comparaison entre modèles</li>
+</ul>
 
-gestion des catégories
+<h3>5️⃣ Module de stockage des modèles</h3>
 
-séparation des jeux de données (entraînement / validation / test)
+<ul>
+<li>Archivage des modèles</li>
+<li>Gestion des versions</li>
+<li>Stockage des métriques associées</li>
+</ul>
 
-versioning des datasets
+<h3>6️⃣ Module de service d’analyse d’image</h3>
 
-3. Module d’annotation des images
+<p>Service permettant aux applications externes d’utiliser les modèles.</p>
 
-Ce module permettra d’associer des catégories aux images.
+<b>Fonctionnalités :</b>
 
-Fonctionnalités :
+<ul>
+<li>Réception d’images à analyser</li>
+<li>Traitement automatique par le modèle</li>
+<li>Retour des résultats</li>
+</ul>
 
-interface simple d’annotation
+<b>Résultats retournés :</b>
 
-affichage des images
+<ul>
+<li>Catégorie détectée</li>
+<li>Niveau de confiance</li>
+</ul>
 
-sélection de catégories
+<h3>7️⃣ Module de supervision et statistiques</h3>
 
-validation ou modification des annotations
+<ul>
+<li>Statistiques d’utilisation</li>
+<li>Suivi des performances du modèle</li>
+<li>Analyse des erreurs</li>
+<li>Monitoring du service</li>
+</ul>
 
-gestion des erreurs d’annotation
+<hr>
 
-4. Module d’entraînement des modèles
+<h2>🏗 Architecture générale</h2>
 
-Ce module permettra d’entraîner des modèles d’intelligence artificielle à partir des datasets disponibles.
+<p>Le système devra être organisé autour de plusieurs composants :</p>
 
-Fonctions :
+<ul>
+<li>Stockage des données</li>
+<li>Plateforme de traitement</li>
+<li>Infrastructure d’entraînement</li>
+<li>Service d’inférence</li>
+<li>Interface de gestion</li>
+</ul>
 
-lancement d’entraînement
+<p>Cette architecture devra permettre :</p>
 
-gestion des versions de modèles
+<ul>
+<li>la montée en charge</li>
+<li>la maintenance</li>
+<li>l’évolution du système</li>
+</ul>
 
-suivi des performances
+<hr>
 
-comparaison entre modèles
+<h2>🖥 Interface de gestion</h2>
 
-5. Module de stockage des modèles
+<p>L’interface web devra permettre :</p>
 
-La plateforme devra stocker les modèles entraînés afin de pouvoir les utiliser en production.
+<ul>
+<li>Gestion des datasets</li>
+<li>Annotation des images</li>
+<li>Lancement des entraînements</li>
+<li>Visualisation des performances</li>
+<li>Gestion des modèles</li>
+</ul>
 
-Fonctions :
+<p>L’interface devra être :</p>
 
-archivage des modèles
+<ul>
+<li>simple d’utilisation</li>
+<li>rapide</li>
+<li>adaptée à un volume important de données</li>
+</ul>
 
-gestion des versions
+<hr>
 
-stockage des métriques associées
+<h2>🚀 Performances attendues</h2>
 
-6. Module de service d’analyse d’image
+<ul>
+<li>Précision élevée du modèle</li>
+<li>Temps de réponse rapide</li>
+<li>Capacité à traiter un grand volume d’images</li>
+</ul>
 
-Ce module permettra d’exposer les modèles via un service accessible par d’autres applications.
+<hr>
 
-Fonctionnalités :
+<h2>🔐 Sécurité</h2>
 
-réception d’images à analyser
+<ul>
+<li>Contrôle d’accès</li>
+<li>Protection des données</li>
+<li>Journalisation des actions</li>
+</ul>
 
-traitement automatique par le modèle
+<hr>
 
-retour du résultat d’analyse
+<h2>📈 Évolutivité</h2>
 
-Les résultats devront inclure :
+<p>Le système devra pouvoir évoluer afin de permettre :</p>
 
-catégorie détectée
+<ul>
+<li>L’ajout de nouvelles catégories</li>
+<li>L’augmentation du volume de données</li>
+<li>L’amélioration continue des modèles</li>
+</ul>
 
-niveau de confiance
+<hr>
 
-7. Module de supervision et statistiques
+<h2>📅 Planning prévisionnel</h2>
 
-La plateforme devra proposer un système de suivi des performances.
+<table>
+<tr>
+<th>Phase</th>
+<th>Description</th>
+</tr>
 
-Fonctions :
+<tr>
+<td>Phase 1</td>
+<td>Infrastructure de stockage et collecte des données</td>
+</tr>
 
-statistiques d’utilisation
+<tr>
+<td>Phase 2</td>
+<td>Gestion des datasets et annotation</td>
+</tr>
 
-suivi des performances du modèle
+<tr>
+<td>Phase 3</td>
+<td>Pipeline d’entraînement des modèles</td>
+</tr>
 
-analyse des erreurs
+<tr>
+<td>Phase 4</td>
+<td>Déploiement du service d’analyse d’images</td>
+</tr>
 
-monitoring du service
+<tr>
+<td>Phase 5</td>
+<td>Optimisation et amélioration continue</td>
+</tr>
 
-4. Architecture générale
+</table>
 
-Le système devra être organisé autour de plusieurs composants :
+<hr>
 
-Stockage des données
+<h2>📦 Livrables</h2>
 
-Plateforme de traitement
+<ul>
+<li>Plateforme fonctionnelle</li>
+<li>Interface de gestion</li>
+<li>Modèles d’intelligence artificielle entraînés</li>
+<li>Service d’analyse d’images</li>
+<li>Documentation complète</li>
+</ul>
 
-Infrastructure d’entraînement des modèles
+<hr>
 
-Service d’inférence
-
-Interface de gestion
-
-Cette architecture devra permettre :
-
-la montée en charge
-
-la maintenance
-
-l’évolution du système
-
-5. Interface de gestion
-
-Une interface web devra permettre :
-
-la gestion des datasets
-
-l’annotation des images
-
-le lancement des entraînements
-
-la visualisation des performances
-
-la gestion des modèles
-
-L’interface devra être :
-
-simple d’utilisation
-
-rapide
-
-adaptée à un volume important de données
-
-6. Performances attendues
-
-Le système devra viser les objectifs suivants :
-
-précision élevée du modèle
-
-temps de réponse rapide
-
-capacité à traiter un grand volume d’images
-
-7. Sécurité
-
-La plateforme devra intégrer :
-
-contrôle d’accès
-
-protection des données
-
-journalisation des actions
-
-8. Évolutivité
-
-Le système devra pouvoir évoluer afin de permettre :
-
-l’ajout de nouvelles catégories
-
-l’augmentation du volume de données
-
-l’amélioration continue des modèles
-
-9. Planning prévisionnel
-
-Le développement pourra être organisé en plusieurs phases :
-
-Phase 1
-
-Mise en place de l’infrastructure de stockage et de collecte des données.
-
-Phase 2
-
-Développement du système de gestion des datasets et d’annotation.
-
-Phase 3
-
-Mise en place du pipeline d’entraînement des modèles.
-
-Phase 4
-
-Déploiement du service d’analyse d’images.
-
-Phase 5
-
-Optimisation et amélioration continue.
-
-10. Livrables
-
-Les livrables attendus sont :
-
-plateforme fonctionnelle
-
-interface de gestion
-
-modèles d’intelligence artificielle entraînés
-
-service d’analyse d’images
-
-documentation du système
+<p align="center">
+<b>AI Image Classification Platform</b><br>
+Computer Vision • Machine Learning • Data Pipeline
+</p>
